@@ -7,6 +7,11 @@ import (
 
 var menus []lib.Menu
 
+func ShowFoods(id int){
+	menu := menus[id]
+	fmt.Printf("%d. %s Rp.%d,- \n", menu.Id, menu.Nama, menu.Harga)
+}
+
 func ShowMenuFoods(menus []lib.Menu) {
 	var navigator int
 	for x:= range menus{
@@ -14,13 +19,16 @@ func ShowMenuFoods(menus []lib.Menu) {
 	}
 	fmt.Println("===================================================================")
 	fmt.Println("==== (n).       Masukan angka untuk memilih makanan          ======")
-	fmt.Println("==== ('kata').  Masukan kata untuk mencari menu              ======")
 	fmt.Println("==== (0).       Untuk kembali ke halaman utama               ======")
 	fmt.Println("===================================================================")
 	fmt.Println("Input: ")
 	fmt.Scanln(&navigator)
-	if(navigator == 1){
-		ShowMenuFoods(menus)
+	if(navigator < len(menus)){
+		if(navigator == 0){
+			ShowMenu()
+		}else{
+			ShowFoods(navigator)
+		}
 	}
 }
 
