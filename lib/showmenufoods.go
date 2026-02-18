@@ -15,7 +15,7 @@ func ShowMenuFoods(menus []Menu) {
 	fmt.Println("===================================================================")
 	fmt.Println("Input: ")
 	fmt.Scanln(&navigator)
-	if navigator < len(menus) {
+	if navigator <= len(menus) {
 		if navigator == 0 {
 			ShowMenu(menus)
 		} else {
