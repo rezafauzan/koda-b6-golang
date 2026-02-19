@@ -15,12 +15,12 @@ func ShowMenuFoods() {
 	fmt.Println("==== (0).       Untuk kembali ke halaman utama               ======")
 	fmt.Println("===================================================================")
 	fmt.Println("Input: ")
-	fmt.Scanln(&navigator)
+	fmt.Scan(&navigator)
 	if navigator <= len(data.MenuData) {
 		if navigator == 0 {
 			ShowMenu()
 		} else {
-			ShowFood(navigator-1)
+			ShowFood(navigator - 1)
 		}
 	}
 }

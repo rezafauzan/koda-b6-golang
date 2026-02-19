@@ -8,7 +8,7 @@ type Menu struct {
 
 type Cart struct {
 	Id   int
-	Menu Menu
+	MenuData Menu
 }
 
 var MenuData []Menu

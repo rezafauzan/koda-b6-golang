@@ -16,7 +16,7 @@ func ShowMenu() {
 	fmt.Println("====         Silahkan pilih menu dengan memasukan angka      ======")
 	fmt.Println("===================================================================")
 	fmt.Println("Input: ")
-	fmt.Scanln(&navigator)
+	fmt.Scan(&navigator)
 	if navigator == 1 {
 		ShowMenuFoods()
 	}
