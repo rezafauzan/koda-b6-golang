@@ -19,5 +19,7 @@ func ShowMenu() {
 	fmt.Scan(&navigator)
 	if navigator == 1 {
 		ShowMenuFoods()
+	} else if navigator == 2 {
+		ShowCartData()
 	}
 }

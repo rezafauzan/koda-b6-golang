@@ -8,10 +8,10 @@ import (
 func ShowFood(id int) {
 	var menu data.Cart
 	menu.MenuData = data.MenuData[id]
-	menu.Id = 0
+	menu.Id = len(data.CartData)
 	var navigator int
 	fmt.Println("===================================================================")
-	fmt.Printf( "Product Id:%d \nProduct Name: %s \nProduct Price: Rp.%d,-        \n", menu.Id, menu.MenuData.Nama, menu.MenuData.Harga)
+	fmt.Printf( "Product Id:%d \nProduct Name: %s \nProduct Price: Rp.%d,-        \n", menu.MenuData.Id, menu.MenuData.Nama, menu.MenuData.Harga)
 	fmt.Println("==== (1). Untuk menambahkan ke keranjang                     ======")
 	fmt.Println("==== (0). Untuk kembali ke list makanan                      ======")
 	fmt.Println("===================================================================")
