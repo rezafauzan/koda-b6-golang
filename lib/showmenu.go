@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func ShowMenu(menus []Menu) {
+func ShowMenu() {
 	var navigator int
 	fmt.Println("===================================================================")
 	fmt.Println("==== Selamat Datang di Program Interactive Pembelian Makanan ======")
@@ -18,6 +18,6 @@ func ShowMenu(menus []Menu) {
 	fmt.Println("Input: ")
 	fmt.Scanln(&navigator)
 	if navigator == 1 {
-		ShowMenuFoods(menus)
+		ShowMenuFoods()
 	}
 }

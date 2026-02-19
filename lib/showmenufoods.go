@@ -2,12 +2,13 @@ package lib
 
 import (
 	"fmt"
+	"rezafauzan/weekly-golang1/data"
 )
 
-func ShowMenuFoods(menus []Menu) {
+func ShowMenuFoods() {
 	var navigator int
-	for x := range menus {
-		fmt.Printf("%d. %s Rp.%d,- \n", menus[x].Id, menus[x].Nama, menus[x].Harga)
+	for x := range data.MenuData {
+		fmt.Printf("%d. %s Rp.%d,- \n", data.MenuData[x].Id, data.MenuData[x].Nama, data.MenuData[x].Harga)
 	}
 	fmt.Println("===================================================================")
 	fmt.Println("==== (n).       Masukan angka untuk memilih makanan          ======")
@@ -15,11 +16,11 @@ func ShowMenuFoods(menus []Menu) {
 	fmt.Println("===================================================================")
 	fmt.Println("Input: ")
 	fmt.Scanln(&navigator)
-	if navigator <= len(menus) {
+	if navigator <= len(data.MenuData) {
 		if navigator == 0 {
-			ShowMenu(menus)
+			ShowMenu()
 		} else {
-			ShowFood(menus, navigator - 1)
+			ShowFood(navigator-1)
 		}
 	}
 }
