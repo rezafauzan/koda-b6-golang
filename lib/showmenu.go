@@ -21,5 +21,7 @@ func ShowMenu() {
 		ShowMenuFoods()
 	} else if navigator == 2 {
 		ShowCartData()
+	} else if navigator == 3 {
+		Checkout()
 	}
 }
