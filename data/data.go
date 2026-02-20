@@ -11,5 +11,11 @@ type Cart struct {
 	MenuData Menu
 }
 
+type CheckoutHistory struct {
+	Id int
+	CartData Cart
+}
+
 var MenuData []Menu
 var CartData []Cart
+var CheckoutHistoryData []CheckoutHistory
