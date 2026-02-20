@@ -13,7 +13,7 @@ type Cart struct {
 
 type CheckoutHistory struct {
 	Id int
-	CartData []Cart
+	CartDataHistory []Cart
 }
 
 var MenuData []Menu

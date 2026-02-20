@@ -20,7 +20,7 @@ func Checkout() {
 		fmt.Printf("Total: Rp.%d,-\n", total)
 		checkoutData := data.CheckoutHistory{
 			Id: len(data.CheckoutHistoryData),
-			CartData: data.CartData,
+			CartDataHistory: data.CartData,
 		}
 		data.CheckoutHistoryData = append(data.CheckoutHistoryData, checkoutData)
 		data.CartData = []data.Cart{}

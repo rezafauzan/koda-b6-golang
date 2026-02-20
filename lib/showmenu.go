@@ -23,5 +23,7 @@ func ShowMenu() {
 		ShowCartData()
 	} else if navigator == 3 {
 		Checkout()
+	} else if navigator == 4 {
+		ShowHistory()
 	}
 }
