@@ -9,6 +9,9 @@ this project is to create CLI App to simulate POS app of a restaurant here i use
 ### Cart UI
 ![Cart UI](/assets/img/cart.png)
 
+### Checkout UI
+![Checkout UI](/assets/img/checkout.png)
+
 ## How to run it 
 - download richesee.exe run it from windows terminal
 - if not from windows download source code and build it for your OS
